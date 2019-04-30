@@ -5,6 +5,9 @@
     <% if article.image != "" %>
       <p><img src="<%= article.image %>"></p>
     <% end %>
+      <a href="">
+       <span>投稿者</span><%= article.user.nickname %>
+      </a>
     <p><%= article.text %></p>
     <p><%= article.created_at %></p>
   </li>
