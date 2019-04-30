@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
   def index
-    @article = Article.all.order("id DESC").page(params[:page]).per(7)
+    @articles = Article.all.order("id DESC").page(params[:page]).per(7)
   end
   
   def new
