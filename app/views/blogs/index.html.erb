@@ -1,5 +1,5 @@
 <ul class="list_article">
-  <% @article.each do |article| %>
+  <% @articles.each do |article| %>
   <li>
     <h2><%= article.title %></h2>
     <% if article.image != "" %>
@@ -9,5 +9,5 @@
     <p><%= article.created_at %></p>
   </li>
   <% end %>
-  <%= paginate(@article) %>
+  <%= paginate(@articles) %>
 </ul>
