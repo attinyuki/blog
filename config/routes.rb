@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'blogs/new' => 'blogs#new' #投稿画面
   post 'blogs' => 'blogs#create' #投稿機能
   get 'users/:id' => 'users#show'
-  #userのidをparamasから取り出せる
+  #userのidをparamasから取り出す
 
 
 end
