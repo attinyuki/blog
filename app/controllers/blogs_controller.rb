@@ -2,7 +2,7 @@ class BlogsController < ApplicationController
   before_action :move_to_index, except: :index
   #move_to_indexをnewとcreateの前のみ動かす
   def index
-    @articles = Article.all.order("id DESC").page(params[:page]).per(7)
+    @articles = Article.includes(:user).page(params[:page]).per(7).order("id DESC")
   end
   
   def new
@@ -10,7 +10,6 @@ class BlogsController < ApplicationController
   
   def create
     Article.create(title: blog_params[:title], image: blog_params[:image], text: blog_params[:text], user_id: current_user.id)
-    #(blog_params)
   end
 
   private
