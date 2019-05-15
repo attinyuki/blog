@@ -1,16 +1,25 @@
 <ul class="list_article">
   <% @articles.each do |article| %>
   <li>
+    
+    <a href="">
+       <span>投稿者</span><%= article.user.nickname %>
+    </a>
     <h2><%= article.title %></h2>
     <% if article.image != "" %>
       <p><img src="<%= article.image %>"></p>
     <% end %>
-      <a href="">
-       <span>投稿者</span><%= article.user.nickname %>
-      </a>
     <p><%= article.text %></p>
     <p><%= article.created_at %></p>
+    
+    <% if user_signed_in? && current_user.id == article.user_id %>
+      <%= link_to 'この投稿を削除', "/blogs/#{article.id}", method: :delete %>
+    <% end %> 
+    
+    
   </li>
   <% end %>
+  
+  
   <%= paginate(@articles) %>
 </ul>
