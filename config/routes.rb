@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get 'blogs' => 'blogs#index'  #一覧画面
   get 'blogs/new' => 'blogs#new' #投稿画面
   post 'blogs' => 'blogs#create' #投稿機能
+  delete 'blogs/:id' => 'blogs#destroy' #削除機能
+  get 'blogs/:id/edit' => 'blogs#edit'
+  
   get 'users/:id' => 'users#show'
   #userのidをparamasから取り出す
 
