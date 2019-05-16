@@ -13,13 +13,11 @@
     <p><%= article.created_at %></p>
     
     <% if user_signed_in? && current_user.id == article.user_id %>
-      <%= link_to 'この投稿を削除', "/blogs/#{article.id}", method: :delete %>
-    <% end %> 
-    
+      <%= link_to 'この投稿を削除', "/blogs/#{article.id}", method: :delete, data: { confirm: '本当に削除しますか？' } %>
+      <%= link_to 'この投稿を編集', "/blogs/#{article.id}/edit", method: :get %>
+  　<% end %> 
     
   </li>
   <% end %>
-  
-  
   <%= paginate(@articles) %>
 </ul>
