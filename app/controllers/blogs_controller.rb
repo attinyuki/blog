@@ -19,6 +19,18 @@ class BlogsController < ApplicationController
     end
   end
   
+  def edit
+    @article = Article.find(params[:id])
+  end
+  
+  def update
+    @article = Article.find(params[:id])
+    if @article.user_id == current_user.id
+      @article.update(blog_params)
+    end
+  end
+
+
 
   private
   def blog_params
