@@ -1,8 +1,8 @@
 <div class="contents row">
   <%= form_tag("/blogs/#{@article.id}", method: :patch ) do %>
-    <h3>
+    <p style="color: #99CC66; font-weight: 800;">
       編集しよう！
-    </h3>
+    </p>
     
     <p><input type="text" name="title" value="<%= @article.title %>" placeholder="タイトル" autofocus="true"></p>
     <p><input type="text" name="image" value="<%= @article.image %>" placeholder="Image Url" autofocus="true"></p>

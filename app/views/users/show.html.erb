@@ -1,27 +1,21 @@
-<!--<div class="contents row">-->
-<!--  <p>%= @nickname %>さんの今までの投稿</p>-->
-<!--  % @articles.each do |article| %>-->
-<!--    <div class="content_post" style="background-image: url(%= article.image %>);">-->
-<!--      %= simple_format(article.text) %>-->
-<!--      <span class="name">%= article.title %></span>-->
-<!--    </div>-->
-<!--  % end %>-->
-<!--  %= paginate(@articles) %>-->
-<!--</div>-->
-
 <ul class="list_article">
-  <p><%= @nickname %>さんの投稿</p>
+  <p><%= @nickname %>さんの今までの投稿</p>
   <% @articles.each do |article| %>
   <li>
     <a href="">
        <span>投稿者</span><%= article.user.nickname %>
     </a>
-    <h2><%= article.title %></h2>
+    <p style="font-size: 31px; color: #33CC99; font-weight: 800;"><%= article.title %></p>
+    
+    <p style="color: #33CC99;"><%= article.text %></p>
+    
     <% if article.image != "" %>
       <p><img src="<%= article.image %>"></p>
     <% end %>
-    <p><%= article.text %></p>
+  
     <p><%= article.created_at %></p>
+    <p>-------------------------------------------------------------------------------------------------------------------------------------------</p>
+    
   </li>
   <% end %>
   <%= paginate(@articles) %>
