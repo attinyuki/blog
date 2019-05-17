@@ -6,6 +6,7 @@
        <span>投稿者</span><%= article.user.nickname %>
     </a>
     <h2><%= article.title %></h2>
+    
     <% if article.image != "" %>
       <p><img src="<%= article.image %>"></p>
     <% end %>
@@ -16,7 +17,7 @@
       <%= link_to 'この投稿を削除', "/blogs/#{article.id}", method: :delete, data: { confirm: '本当に削除しますか？' } %>
       <%= link_to 'この投稿を編集', "/blogs/#{article.id}/edit", method: :get %>
   　<% end %> 
-    
+    <p>---------------------------------------------------------------------------------------------------------------------------------------------</p>
   </li>
   <% end %>
   <%= paginate(@articles) %>
