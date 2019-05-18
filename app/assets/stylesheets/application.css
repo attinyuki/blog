@@ -11,5 +11,91 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require style
  *= require_self
  */
+
+/*application.html.erb*/
+/*ブログ*/
+.header_top{
+    margin: 20px 90px 2px 510px;
+    color: green;
+    
+}
+/*ログイン、新規登録*/
+.header_before_user{
+    margin: 1px 30px 20px 690px;
+}
+
+
+/*マイページ、ログアウト*/
+.user__info{
+    margin: 1px 30px 5px 630px;
+    list-style: none;
+}
+
+/*投稿しよう*/
+.header_create{
+    margin: 1px 30px 10px 710px;
+}
+
+
+/*@のページ*/
+.header_user{
+    padding-left: 60px;
+}
+
+/*フッター*/
+.footer_{
+    margin-left: 470px;
+    font-weight: 800;
+    color: #33CC99;
+}
+
+
+/*index.html.erb*/
+.list_article{
+    padding-left: 130px;
+    list-style: none;
+}
+
+/*new.html.erb*/
+.contents_new{
+    margin-left: 60px;
+}
+.contents_new_write{
+    margin-left: 510px
+}
+
+/*create.html.erb*/
+.success{
+    margin-left: 470px;
+}
+.success_home{
+    margin-left: 510px;
+}
+
+
+/*edit.html.erb*/
+.contents_edit{
+    margin-left: 510px;
+}
+
+/*uodate.html.erb*/
+.success_edit{
+    margin-left: 460px;
+}
+.edit_home{
+    margin-left: 500px;
+}
+
+
+/*views/devise/registration/new.html.erb/新規登録画面*/
+.contents_user_create{
+    margin-left: 510px;
+}
+
+/*views/devise/sessions/new.html.erb/ログイン画面*/
+.contents_user_login{
+    margin-left: 510px;
+}
