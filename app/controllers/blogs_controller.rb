@@ -1,6 +1,7 @@
 class BlogsController < ApplicationController
-  before_action :move_to_index, except: :index
-  #move_to_indexをnewとcreateの前のみ動かす
+  before_action :move_to_index, except: [:index, :show]
+  #ログインしていなくても投稿と詳細ページが見れる
+  
   def index
     @articles = Article.includes(:user).page(params[:page]).per(7).order("id DESC")
   end
@@ -29,6 +30,11 @@ class BlogsController < ApplicationController
       @article.update(blog_params)
     end
   end
+  
+  def show
+    @article = Article.find(params[:id])
+  end
+
 
 
 
@@ -38,7 +44,6 @@ class BlogsController < ApplicationController
   end
   
   def move_to_index
-    redirect_to action: :index unless user_signed_in?
-    #ユーザーがログインしてないとき、indexアクションを実行
+    redirect_to action: :index unless user_signed_in?    #ユーザーがログインしてないとき、indexアクションを実行
   end
 end
