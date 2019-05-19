@@ -13,12 +13,15 @@
   
       <p style="color: #33CC99;"><%= article.created_at %></p>
     
-      <div class="varied">
+      
+      <div class="destroy_edit">
+        <%= link_to '◇詳細見たい！', "/blogs/#{article.id}", method: :get %>
         <% if user_signed_in? && current_user.id == article.user_id %>
-          <%= link_to '削除したい！', "/blogs/#{article.id}", method: :delete, data: { confirm: '本当に削除しますか？' } %>
-          <%= link_to '編集したい！', "/blogs/#{article.id}/edit", method: :get %>
-  　     <% end %> 
-  　   </div>
+          <%= link_to '◇削除したい！', "/blogs/#{article.id}", method: :delete, data: { confirm: '本当に削除しますか？' } %>
+          <%= link_to '◇編集したい！', "/blogs/#{article.id}/edit", method: :get %>
+        <% end %> 
+      </div>
+  　
   　
   
     </div>
