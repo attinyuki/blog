@@ -19,7 +19,7 @@
 /*ブログ*/
 .header_top{
     margin: 20px 90px 2px 510px;
-    color: green;
+    
     
 }
 /*ログイン、新規登録*/
@@ -40,14 +40,14 @@
 }
 
 
-/*@のページ*/
+/*@nicknameのページ*/
 .header_user{
-    padding-left: 60px;
+    padding-left: 120px;
 }
 
 /*フッター*/
 .footer_{
-    margin-left: 470px;
+    margin-left: 450px;
     font-weight: 800;
     color: #33CC99;
 }
@@ -55,8 +55,23 @@
 
 /*index.html.erb*/
 .list_article{
-    padding-left: 130px;
+    padding-left: 120px;
     list-style: none;
+    
+}
+.article_one{
+    margin-right: 120px;
+    padding-top: 12px;
+    border-top: dotted 3px #33CC99;
+    
+    
+    
+}
+/*削除、編集機能*/
+.destroy_edit{
+    margin-top: 2px;
+    margin-bottom: 1px; 
+    text-decoration: none;
 }
 
 /*new.html.erb*/
@@ -65,11 +80,12 @@
 }
 .contents_new_write{
     margin-left: 510px
+    
 }
 
 /*create.html.erb*/
 .success{
-    margin-left: 470px;
+    margin-left: 460px;
 }
 .success_home{
     margin-left: 510px;
@@ -89,6 +105,14 @@
     margin-left: 500px;
 }
 
+/*destroy.html.erb*/
+.success_destroy{
+    margin-left: 510px;
+}
+.destroy_home{
+    margin-left: 480px;
+}
+
 
 /*views/devise/registration/new.html.erb/新規登録画面*/
 .contents_user_create{
@@ -98,4 +122,12 @@
 /*views/devise/sessions/new.html.erb/ログイン画面*/
 .contents_user_login{
     margin-left: 510px;
+}
+
+/*user/show.html.erb/マイページ*/
+.article_user_one{
+    margin-right: 120px;
+    padding-top: 12px;
+    border-top: double 3px #33CC99;
+    border-bottom: double 3px #33CC99;
 }
