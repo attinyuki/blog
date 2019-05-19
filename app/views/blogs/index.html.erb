@@ -1,27 +1,29 @@
 <ul class="list_article">
   <% @articles.each do |article| %>
   <li>
-    
+    <div class="article_one">
   
-    <a>投稿者 <%= article.user.nickname %> </a>
-    <a style="font-size: 31px; color: #33CC99; font-weight: 800;">「<%= article.title %>」</a>
+      <a>投稿者 <%= article.user.nickname %> </a>
+      <a style="font-size: 31px; color: #33CC99; font-weight: 800;">「<%= article.title %>」</a>
+      <p style="color: #33CC99;"><%= article.text %></p>
     
-    
-    <p style="color: #33CC99;"><%= article.text %></p>
-    
-    
-    <% if article.image != "" %>
-      <p><img src="<%= article.image %>"></p>
-    <% end %>
+      <% if article.image != "" %>
+        <p><img src="<%= article.image %>"></p>
+      <% end %>
   
-    <p style="color: #33CC99;"><%= article.created_at %></p>
+      <p style="color: #33CC99;"><%= article.created_at %></p>
     
-    <% if user_signed_in? && current_user.id == article.user_id %>
-      <%= link_to 'この投稿を削除', "/blogs/#{article.id}", method: :delete, data: { confirm: '本当に削除しますか？' } %>
-      <%= link_to 'この投稿を編集', "/blogs/#{article.id}/edit", method: :get %>
-  　<% end %> 
-    <p>---------------------------------------------------------------------------------------------------------------------------------------------</p>
+      <div class="varied">
+        <% if user_signed_in? && current_user.id == article.user_id %>
+          <%= link_to '削除したい！', "/blogs/#{article.id}", method: :delete, data: { confirm: '本当に削除しますか？' } %>
+          <%= link_to '編集したい！', "/blogs/#{article.id}/edit", method: :get %>
+  　     <% end %> 
+  　   </div>
+  　
+  
+    </div>
   </li>
+  
   <% end %>
   <%= paginate(@articles) %>
 </ul>
