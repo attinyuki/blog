@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+		a {
+			text-decoration: none ;
+		}
+	  </style>
     <title>ブログ</title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -22,28 +27,34 @@
   </head>
   
   <body>
+    
+    
     <header class="header">
     <div class="header__bar row">
-      <h1 class="grid-6"><a href="">ブログ</a></h1>
+      <h1 class="grid-6 header_top"><a href="" style="text-decoration: none;">ブログ</a></h1>
       
       　
       
       <% if user_signed_in? %>
-        <div class="user_nav grid-6">
-          <span><%= current_user.nickname %>
+        <div class="user_nav grid-6 header_menu">
             <ul class="user__info">
               <li>
-                <a href="/users/<%= current_user.id %>">マイページ</a>
+                <a href="/users/<%= current_user.id %>" style="text-decoration: none;">マイページ</a>
                 <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
               </li>
             </ul>
-          </span>
-          <a class="post" href="/blogs/new">投稿しよう！</a>
+            <div class="header_create">
+              <a class="post" href="/blogs/new" style="text-decoration: none;">投稿しよう！</a>
+            </div>
+        </div>
+        
+        <div class="user_nab header_user">
+        <span><%= current_user.nickname %>はログイン中(ｏ'ー'ｏ)ﾉ</spam>
         </div>
       <% else %>
       
-        <div class="grid-6">
-          <%= link_to "ログイン", new_user_session_path, class: 'post' %>
+        <div class="grid-6 header_before_user">
+          <%= link_to "ログイン", new_user_session_path, class: 'post'%>
           <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
         </div>
       <% end %>
@@ -54,10 +65,12 @@
 
     <%= yield %>
 
-    <footer>
-      <p>
-        今日も自分をほめよう(^^)/
-      </p>
-    </footer>
+    <div class="footer_">
+      <footer>
+        <p>
+          今日も自分をほめよう(^^)/
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
