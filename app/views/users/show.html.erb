@@ -2,18 +2,20 @@
   <p><%= @nickname %>の今までの投稿</p>
   <% @articles.each do |article| %>
   <li>
-    <a>投稿者<%= article.user.nickname %></a>
-    <a style="font-size: 31px; color: #33CC99; font-weight: 800;">「<%= article.title %>」</a>
+    <div class="article_user_one">
+      <a>投稿者<%= article.user.nickname %></a>
+      <a style="font-size: 31px; color: #33CC99; font-weight: 800;">「<%= article.title %>」</a>
     
-    <p style="color: #33CC99;"><%= article.text %></p>
+      <p style="color: #33CC99;"><%= article.text %></p>
     
-    <% if article.image != "" %>
-      <p><img src="<%= article.image %>"></p>
-    <% end %>
+      <% if article.image != "" %>
+        <p><img src="<%= article.image %>"></p>
+      <% end %>
   
-    <p style="color: #33CC99;"><%= article.created_at %></p>
-    <p>-------------------------------------------------------------------------------------------------------------------------------------------</p>
+      <p style="color: #33CC99;"><%= article.created_at %></p>
     
+  
+    </div>
   </li>
   <% end %>
   <%= paginate(@articles) %>
