@@ -8,10 +8,12 @@
       <p style="color: #FF6699;">
         投稿する
       </p>
-      <p><input type="text" name="title" placeholder="タイトル"></p>
-      <p><input type="text" name="image" placeholder="Image Url"></p>
-      <textarea name="text" placeholder="どんな日だった？" rows="10" cols="30"></textarea>
-      <p><input type="submit" value="今日もがんばってるね！投稿！"></p>
+      <div class="create_item">
+        <p><input type="text" name="title" placeholder="タイトル" class="new_articles_title"></p>
+        <p><input type="text" name="image" placeholder="Image Url" class="new_articles_img"></p>
+        <textarea name="text" placeholder="どんな日だった？" rows="10" cols="30" class="new_articles_text"></textarea>
+        <p><input type="submit" value="今日もがんばってるね！投稿！" class="new_articles_btn"></p>
+      </div>
     <% end %>
   </div>
 </div>
