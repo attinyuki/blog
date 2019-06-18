@@ -149,10 +149,10 @@
     margin-right: 416px;
     padding-left: 310px;
     margin-bottom: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
     
     
-    height: 365px;
+    height: 390px;
     font-size: 23px;
     color: #ffffff;
     font-weight: bold;
@@ -164,6 +164,7 @@
     background-color: #fffafa;
     color: #ff69b4;
     margin-right: 194px;
+    margin-bottom: 0px;
     padding-left: 6px;
     padding-bottom: 15px;
     border-bottom: solid 3px #da70d6;
@@ -177,7 +178,7 @@
     height: 30px;
     background-color: #fffafa;
     color: #ff69b4;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-right: 305px;
     padding-left: 6px;
     
@@ -192,7 +193,7 @@
     height: 27px;
     background-color: #fffafa;
     color: #ff69b4;
-    margin-top: 12px;
+    margin-top: 25px;
     margin-right: 355px;
     padding-left: 3px;
     padding-bottom: 3px;
@@ -205,7 +206,7 @@
 
 .user_new_password_confirmation{
     height: 30px;
-    margin-top: 50px;
+    margin-top: 60px;
     background-color: #fffafa;
     color: #ff69b4;
     margin-right: 280px;
