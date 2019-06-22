@@ -1,13 +1,14 @@
 <div class="contents row">
-  <div class="contents_new">
-    <a href="/" style="text-decoration: none;">間違えた！ホームに戻ろう！</a>
+  <div class="contents_new_home">
+    <a href="/">間違えた！ホームに戻ろう！</a>
   </div>
     
   <div class="contents_new_write"> 
     <%= form_tag('/blogs', method: :post) do %>
-      <p style="color: #FF6699;">
+      <p class="contents_new_word">
         投稿する
       </p>
+      
       <div class="create_item">
         <p><input type="text" name="title" placeholder="タイトル" class="new_articles_title"></p>
         <p><input type="text" name="image" placeholder="Image Url" class="new_articles_img"></p>
