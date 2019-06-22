@@ -1,6 +1,6 @@
 <div class="contents_edit">
   <%= form_tag("/blogs/#{@article.id}", method: :patch ) do %>
-    <p style="color: #99CC66; font-weight: 800;">
+    <p class="edit_word">
       編集しよう！
     </p>
     
@@ -8,7 +8,6 @@
     <p><input type="text" name="image" value="<%= @article.image %>" placeholder="Image Url" autofocus="true" class="edit_imag"></p>
     <p><textarea name="text" placeholder="どんな日だった？" rows="10" cols="30" class="edit_text"><%= @article.text %></textarea></p>
 
-    
     <input type="submit" value="編集終わった！" class="edit_btn">
   <% end %>
 </div>
