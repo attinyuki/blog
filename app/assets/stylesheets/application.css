@@ -15,17 +15,46 @@
  *= require_self
  */
 
+
+body{
+    font-family: serif;
+}
+*{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
 /*application.html.erb*/
 /*ブログ*/
-.header_top{
-    height: 24px;
-    width: 120px;
-    font-size: 40px;
-    padding-left: 540px;
-    
-    
-    
+.header{
+    background-image: url("https://www.pakutaso.com/shared/img/thumb/PAK88_midorihikari15191438_TP_V.jpg");
+    margin-top: 0px;
+    padding-top: 0px;
 }
+
+.header__bar{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.header_title{
+    height: 60px;
+    font-size: 40px;
+    color: #008080;
+    padding-top: 14px;
+    padding-left: 545px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.grid-6_header_top{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
 /*ログイン、新規登録*/
 .header_before_user{
     margin-left: 680px;
@@ -37,41 +66,83 @@
 .user__info{
     margin: 1px 30px 5px 630px;
     list-style: none;
+    
 }
 
 /*投稿しよう*/
 .header_create{
-    margin: 1px 30px 10px 710px;
+    height: 22px;
+    border: solid 1px #66cdaa;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    margin-left: 710px;
+    margin-right: 583px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+/*@nicknameがログイン中*/
+.user_nab_header_user{
+    padding-bottom: 2px;
+    padding-left: 8px;
+    
+    
+    margin-right: 1143px;
+    margin-left: 109px;
 }
 
-
-/*@nicknameのページ*/
+/*@nicknameの今までの投稿*/
 .header_user{
     padding-left: 120px;
+    color: #006400;
 }
 
 /*フッター*/
 .footer_{
-    margin-left: 450px;
+    padding-left: 480px;
     font-weight: 800;
     color: #33CC99;
+    background-image: url("https://www.pakutaso.com/shared/img/thumb/PAK88_midorihikari15191438_TP_V.jpg");
+    height: 30px;
+    
 }
+
+
+
+
+
+
 
 
 /*index.html.erb*/
 .list_article{
     padding-left: 120px;
     list-style: none;
-    
 }
 .article_one{
     margin-right: 120px;
     padding-top: 12px;
     border-top: dotted 3px #33CC99;
-    
-    
-    
 }
+/*投稿のタイトル*/
+.article_title{
+    font-size: 31px;
+    color: #33CC99;
+    font-weight: 800;
+}
+/*投稿の記事*/
+.article_text{
+    color: #33CC99;
+}
+/*投稿の日付*/
+.article_created{
+    color: #33CC99;
+}
+
+
+
 /*削除、編集機能*/
 .destroy_edit{
     margin-top: 2px;
@@ -79,25 +150,62 @@
     text-decoration: none;
 }
 
+
+
+
+
+
+
+
 /*new.html.erb*/
-.contents_new{
+/*間違えた！ホームに戻ろう！*/
+.contents_new_home{
     margin-left: 110px;
+    text-decoration: none;
 }
-.contents_new_write{
-    margin-left: 510px;
-    border-radius: 10px;
+/*投稿する*/
+.contents_new_word{
+    color: #FF6699;
+    font-size: 25px;
+    margin-left: 556px;
+    font-weight: bold;
 }
-.input.create_item{
-    width:10px;
-    height:30px;
-    border-radius: 110px;
-    font-size: 10px;
+/*.input.create_item{*/
+/*    width:10px;*/
+/*    height:30px;*/
+/*    border-radius: 110px;*/
+/*    font-size: 10px;*/
+/*    margin-left: 500px;*/
     
+/*}*/
+.new_articles_title{
+    margin-left: 440px;
+    height: 24px;
+    width: 400px;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
+.new_articles_img{
+    margin-left: 440px;
+    height: 24px;
+    width: 400px;
+    font-size: 18px;
+}
+.new_articles_text{
+    margin-left: 440px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 400px;
+    font-size: 18px;
+}
+/*今日もがんばってるね！投稿！*/
 .new_articles_btn{
+    margin-left: 490px;
+    margin-bottom: 60px;
     display       : inline-block;
     border-radius : 30%;          /* 角丸       */
-    font-size     : 10pt;        /* 文字サイズ */
+    font-size     : 13pt;        /* 文字サイズ */
     text-align    : center;      /* 文字位置   */
     cursor        : pointer;     /* カーソル   */
     padding       : 1px 20px;   /* 余白       */
@@ -107,31 +215,12 @@
     transition    : .3s;         /* なめらか変化 */
     box-shadow    : 9px 9px 12px #666666;  /* 影の設定 */
     border        : 2px solid #ffff1a;    /* 枠の指定 */
+    font-family: serif;
 }
 .new_articles_btn:hover {
     box-shadow    : none;        /* カーソル時の影消去 */
     color         : #ffff1a;     /* 背景色     */
     background    : #7f4600;     /* 文字色     */
-}
-
-.new_articles_title{
-    height: 24px;
-    width: 400px;
-    font-size: 18px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    
-}
-.new_articles_img{
-    height: 24px;
-    width: 400px;
-    font-size: 18px;
-}
-.new_articles_text{
-    height: 100px;
-    width: 400px;
-    font-size: 18px;
-    
 }
 
 
@@ -140,19 +229,61 @@
 
 
 /*create.html.erb*/
-.success{
-    margin-left: 460px;
+/*全体*/
+.contents_create{
+    height: 390px;
 }
-.success_home{
-    margin-left: 510px;
+/*投稿できたよ！おつかれさま！*/
+.create_success{
+    color: #FF3366;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 465px;
 }
+/*ホームへ戻ろう！*/
+.create_success_home{
+    margin-top: 30px;
+    margin-left: 540px;
+    text-decoration: none;
+}
+
+
+
+
 
 
 /*edit.html.erb*/
-.contents_edit{
-    margin-left: 510px;
+/*編集しよう！*/
+.edit_word{
+    color: #99CC66;
+    margin-left: 537px;
+    padding-top: 18px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.edit_title{
+    height: 24px;
+    width: 400px;
+    font-size: 18px;
+    margin-left: 440px;
+}
+.edit_imag{
+    height: 24px;
+    width: 400px;
+    font-size: 18px;
+    margin-left: 440px;
+}
+.edit_text{
+    height: 100px;
+    width: 400px;
+    font-size: 18px;
+    margin-left: 440px;
+    
 }
 .edit_btn{
+    margin-left: 540px;
+    padding-top: 0px;
+    margin-bottom: 80px;
      display       : inline-block;
      border-radius : 20%;          /* 角丸       */
      font-size     : 14pt;        /* 文字サイズ */
@@ -165,45 +296,66 @@
      transition    : .3s;         /* なめらか変化 */
      box-shadow    : 9px 9px 12px #666666;  /* 影の設定 */
      border        : 2px solid rgba(255, 127, 127, 0.89);    /* 枠の指定 */
+     font-family: serif;
 }
 .edit_btn:hover {
   box-shadow    : none;        /* カーソル時の影消去 */
   color         : rgba(255, 127, 127, 0.89);     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
 }
-.edit_title{
-    height: 24px;
-    width: 400px;
-    font-size: 18px;
-}
-.edit_imag{
-    height: 24px;
-    width: 400px;
-    font-size: 18px;
-}
-.edit_text{
-    height: 100px;
-    width: 400px;
-    font-size: 18px;
-}
+
+
+
 
 
 
 /*update.html.erb*/
+/*再投稿したよ！おつかれさま！*/
 .success_edit{
+    margin-top: 40px;
     margin-left: 460px;
+    color: #99CC00;
+    font-size: 27px;
 }
+/*投稿一覧に戻ろう*/
 .edit_home{
-    margin-left: 500px;
+    margin-left: 530px;
+    margin-top: 20px;
+    margin-bottom: 280px;
+    text-decoration: none;
 }
 
+
+
+
+
+
+
+
+
 /*destroy.html.erb*/
+/*全体*/
+.contents_destroy{
+    height: 390px;
+}
+/*削除したよ！*/
 .success_destroy{
-    margin-left: 510px;
+    margin-top: 35px;
+    margin-left: 527px;
+    margin-bottom: 20px;
+    color: #999966;
+    font-size: 29px;
 }
+/*投稿一覧へ戻ろう！*/
 .destroy_home{
-    margin-left: 480px;
+    margin-left: 522px;
+    text-decoration: none;
 }
+
+
+
+
+
 
 
 /*views/devise/registration/new.html.erb/新規登録画面*/
@@ -212,11 +364,12 @@
     background: #da70d6;
     font-size: 28px;
     color: #fff0f5;
-    font-family: cursive;
+    font-family: serif;
     height: 43px;
     margin-bottom: 11px;
     margin-right: 576px;
     margin-left: 365px;
+    margin-top: 10px;
     
     padding-left: 175px;
     border-top-left-radius: 10px;
@@ -226,25 +379,22 @@
 }
 .user_new{
     margin-left: 219px;
-    margin-right: 416px;
+    margin-right: 421px;
     padding-left: 310px;
     margin-bottom: 30px;
     padding-top: 10px;
-    
-    
-    height: 390px;
+    height: 410px;
     font-size: 23px;
     color: #ffffff;
     font-weight: bold;
     background-image: url("https://www.buckleyandphillips.com.au/productimages/4706_1.jpg")
-    
 }
-
+/*ニックネーム(7文字まで)*/
 .user_new_nickname{
     height: 17px;
     background-color: #fffafa;
     color: #ff69b4;
-    margin-right: 194px;
+    margin-right: 205px;
     margin-bottom: 0px;
     padding-left: 6px;
     padding-bottom: 15px;
@@ -254,13 +404,13 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
+/*メールアドレス*/
 .user_new_maill{
     height: 30px;
     background-color: #fffafa;
     color: #ff69b4;
     margin-top: 25px;
-    margin-right: 305px;
+    margin-right: 315px;
     padding-left: 6px;
     
     border-bottom: solid 3px #da70d6;
@@ -268,29 +418,30 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    
 }
+/*パスワード*/
 .user_new_password{
     height: 27px;
     background-color: #fffafa;
     color: #ff69b4;
-    margin-top: 25px;
-    margin-right: 355px;
+    margin-top: 27px;
+    margin-right: 365px;
     padding-left: 3px;
     padding-bottom: 3px;
+    margin-bottom: 0px;
     border-bottom: solid 3px #da70d6;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
+/*パスワードの確認*/
 .user_new_password_confirmation{
     height: 30px;
     margin-top: 60px;
     background-color: #fffafa;
     color: #ff69b4;
-    margin-right: 280px;
+    margin-right: 290px;
     padding-left: 6px;
     border-bottom: solid 3px #da70d6;
     border-top-left-radius: 10px;
@@ -298,15 +449,31 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
-.user_new_nackname_form{
-     
-    
+/*登録するボタン*/
+.user_new_button{
+    font-family: serif;
+    font-weight: bold;
+    margin-top: 16px;
+    display       : inline-block;
+    border-radius : 9%;          /* 角丸       */
+    font-size     : 18px;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 9px 45px;   /* 余白       */
+    background    : #faefdf;     /* 背景色     */
+    color         : #ff4da6;     /* 文字色     */
+    line-height   : 10px;         /* 1行の高さ  */
+    opacity       : 0.9;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 5px 5px 3px #666666;  /* 影の設定 */
+}
+.user_new_button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 1;           /* カーソル時透明度 */
 }
 
-.user_new_actions{
-    
-}
+
+
 
 
 
@@ -325,7 +492,7 @@
     color: #57591d;
     height: 43px;
     
-    
+    margin-top: 10px;
     margin-bottom: 14px;
     margin-left: 370px;
     margin-right: 570px;
@@ -346,10 +513,50 @@
     color: #021e56;
     background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/16/67/645825862063634.jpg")
 }
-.btm{
-    height: 400px;
-    width: 300px;
+.login_button{
+    font-family: serif;
+    font-weight: bold;
+    display       : inline-block;
+    border-radius : 9%;          /* 角丸       */
+    font-size     : 17px;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 8px 29px;   /* 余白       */
+    background    : #ffffff;     /* 背景色     */
+    color         : #7f4600;     /* 文字色     */
+    line-height   : 10px;         /* 1行の高さ  */
+    opacity       : 1;           /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
 }
+.login_button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 0.8;         /* カーソル時透明度 */
+}
+
+
+
+
+
+/*ログイン画面・新規登録画面*/
+input[type="text"] {
+    width: 400px;
+    height: 24px;
+    font-size: 20px;
+    }
+    
+input[type="password"] {
+    width: 300px;
+    height: 25px;
+    font-size: 20px;
+    }
+
+input[type="email"] {
+    width: 300px;
+    height: 25px;
+    font-size: 20px;
+    }
+
 
 
 
