@@ -15,10 +15,10 @@
     
       
       <div class="destroy_edit">
-        <%= link_to '◇詳細見たい！', "/blogs/#{article.id}", method: :get %>
+        <%= button_to '◇詳細見たい！', "/blogs/#{article.id}", method: :get, :class => "index_details_btn" %>
         <% if user_signed_in? && current_user.id == article.user_id %>
-          <%= link_to '◇削除したい！', "/blogs/#{article.id}", method: :delete, data: { confirm: '本当に削除しますか？' } %>
-          <%= link_to '◇編集したい！', "/blogs/#{article.id}/edit", method: :get %>
+          <%= button_to '◇削除したい！', "/blogs/#{article.id}", method: :delete, data: { confirm: '本当に削除しますか？' }, :class => "index_destroy_btn" %>
+          <%= button_to '◇編集したい！', "/blogs/#{article.id}/edit", method: :get, :class => "index_edit_btn"  %>
         <% end %> 
       </div>
   　
