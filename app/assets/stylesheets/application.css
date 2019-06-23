@@ -179,7 +179,7 @@ body{
     
 /*}*/
 .new_articles_title{
-    margin-left: 440px;
+    margin-left: 450px;
     height: 24px;
     width: 400px;
     font-size: 18px;
@@ -187,21 +187,21 @@ body{
     padding-bottom: 0px;
 }
 .new_articles_img{
-    margin-left: 440px;
+    margin-left: 450px;
     height: 24px;
     width: 400px;
     font-size: 18px;
 }
 .new_articles_text{
-    margin-left: 440px;
+    margin-left: 450px;
     margin-bottom: 20px;
     height: 100px;
-    width: 400px;
+    width: 330px;
     font-size: 18px;
 }
 /*今日もがんばってるね！投稿！*/
 .new_articles_btn{
-    margin-left: 490px;
+    margin-left: 477px;
     margin-bottom: 60px;
     display       : inline-block;
     border-radius : 30%;          /* 角丸       */
@@ -265,20 +265,19 @@ body{
     height: 24px;
     width: 400px;
     font-size: 18px;
-    margin-left: 440px;
+    margin-left: 450px;
 }
 .edit_imag{
     height: 24px;
     width: 400px;
     font-size: 18px;
-    margin-left: 440px;
+    margin-left: 450px;
 }
 .edit_text{
     height: 100px;
-    width: 400px;
+    width: 330px;
     font-size: 18px;
-    margin-left: 440px;
-    
+    margin-left: 450px;
 }
 .edit_btn{
     margin-left: 540px;
@@ -503,58 +502,63 @@ body{
     border-bottom-left-radius: 10px;
 }
 .user_login{
-    height: 300px;
+    height: 290px;
     margin-left: 130px;
     margin-right: 308px;
     margin-bottom: 70px;
-    padding-top: 30px;
-    padding-left: 410px;
+    padding-left: 380px;
+    padding-top: 20px;
     font-size: 24px;
-    color: #021e56;
     background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/16/67/645825862063634.jpg")
 }
-.login_button{
-    font-family: serif;
-    font-weight: bold;
-    display       : inline-block;
-    border-radius : 9%;          /* 角丸       */
-    font-size     : 17px;        /* 文字サイズ */
-    text-align    : center;      /* 文字位置   */
-    cursor        : pointer;     /* カーソル   */
-    padding       : 8px 29px;   /* 余白       */
-    background    : #ffffff;     /* 背景色     */
-    color         : #7f4600;     /* 文字色     */
-    line-height   : 10px;         /* 1行の高さ  */
-    opacity       : 1;           /* 透明度     */
-    transition    : .3s;         /* なめらか変化 */
-    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+
+/*ログインする*/
+/*.login_button{*/
+    /*margin-left: 390px;*/
+    /*font-family: serif;*/
+    /*font-weight: bold;*/
+    /*display       : inline-block;*/
+    /*border-radius : 9%;          /* 角丸       
+    font-size     : 17px;        /* 文字サイズ 
+    text-align    : center;      /* 文字位置   
+    cursor        : pointer;     /* カーソル   
+    padding       : 8px 29px;   /* 余白       
+    background    : #ffffff;     /* 背景色     
+    color         : #7f4600;     /* 文字色     
+    line-height   : 10px;         /* 1行の高さ  
+    opacity       : 1;           /* 透明度     
+    transition    : .3s;         /* なめらか変化 
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 
 }
 .login_button:hover {
     box-shadow    : none;        /* カーソル時の影消去 */
-    opacity       : 0.8;         /* カーソル時透明度 */
+    /*opacity       : 0.8;         /* カーソル時透明度 
 }
 
 
 
 
 
-/*ログイン画面・新規登録画面*/
+/*ログイン画面・新規登録画面・投稿画面・編集画面の記入欄*/
 input[type="text"] {
-    width: 400px;
+    width: 330px;
     height: 24px;
     font-size: 20px;
+    font-family: serif;
     }
     
 input[type="password"] {
-    width: 300px;
+    width: 330px;
     height: 25px;
     font-size: 20px;
+    font-family: serif;
     }
 
 input[type="email"] {
-    width: 300px;
+    width: 330px;
     height: 25px;
     font-size: 20px;
+    font-family: serif;
     }
 
 
