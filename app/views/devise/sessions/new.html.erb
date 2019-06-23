@@ -4,6 +4,7 @@
   </div>
   
   <div class="user_login">
+  
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="user_login_email">
         <%= f.label :メールアドレス %><br />
@@ -20,17 +21,17 @@
 
 
       <% if devise_mapping.rememberable? %>
-        <div class="field">
+        <div class="user_login_check_box">
           <%= f.label :パスワードを覚える -%><br />
           <%= f.check_box :remember_me %>
         </div>
       <% end -%>
+    
 
       <div class="actions">
-        <%= f.submit "ログインする", :class => "login_button" %>
+        <%= f.submit "ログインする" %>
       </div>
     <% end %>
+    
   </div>
-
-
 </div>
