@@ -151,19 +151,20 @@ body{
 /*投稿の日付*/
 .article_created{
     color: #33CC99;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 
 
 /*削除、編集機能*/
 .destroy_edit{
-    margin-bottom: 0px; 
+    
     text-decoration: none;
     word-break: keep-all;
 }
 /*詳細ボタン*/
 .index_details_btn{
+    margin-top: 5px;
     font-weight: bold;
     float: left;
     font-family: serif;
@@ -187,6 +188,7 @@ body{
 }
 /*削除ボタン*/
 .index_destroy_btn{
+    margin-top: 5px;
     font-weight: bold;
     margin-left: 3px;
     float: left;
@@ -211,7 +213,9 @@ body{
 }
 /*編集ボタン*/
 .index_edit_btn{
+    margin-top: 5px;
     font-weight: bold;
+    margin-bottom: 10px;
     margin-left: 3px;
     font-family: serif;
     display       : inline-block;
@@ -232,6 +236,9 @@ body{
     color         : #ffffff;     /* 背景色     */
     background    : #006666;     /* 文字色     */
 }
+
+
+
 
 
 
