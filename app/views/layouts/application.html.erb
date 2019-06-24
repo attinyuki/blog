@@ -6,7 +6,7 @@
 			text-decoration: none ;
 		}
 	  </style>
-    <title>春のブログ</title>
+    <title>ブログ</title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -31,7 +31,7 @@
     
     <header class="header">
     <div class="header__bar row">
-      <h1 class="grid-6 header_top"><p href="" style="text-decoration: none;">ブログ</p></h1>
+      <h1 class="grid-6_header_top"><a class="header_title", href="/" style="text-decoration: none;">ブログ</a></h1>
       
       　
       
@@ -48,14 +48,14 @@
             </div>
         </div>
         
-        <div class="user_nab header_user">
-        <span><%= current_user.nickname %>がログイン中(ｏ'ー'ｏ)</spam>
+        <div class="user_nabheader_user">
+          <span><%= current_user.nickname %>がログイン中</spam>
         </div>
       <% else %>
       
         <div class="grid-6 header_before_user">
-          <%= link_to "ログイン", new_user_session_path, class: 'post'%>
-          <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
+          <%= button_to "ログイン", new_user_session_path, class: 'post', :class => "header_login" %>
+          <%= button_to "新規登録", new_user_registration_path, class: 'post', :class => "header_new_user" %>
         </div>
       <% end %>
     </div>

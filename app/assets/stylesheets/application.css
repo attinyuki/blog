@@ -70,8 +70,69 @@ body{
 /*ログイン、新規登録*/
 .header_before_user{
     margin-left: 680px;
-    height: 30px;
+    height: 36px;
+    
 }
+/*ログインボタン*/
+.header_login{
+    float: left;
+    margin-top: 0px;
+    margin-right: 3px;
+    height: 27px;
+    font-family: serif;
+    font-weight: bold;
+    display       : inline-block;
+    border-radius : 10%;          /* 角丸       */
+    font-size     : 14pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 6px 19px;   /* 余白       */
+    background    : #ffffff;     /* 背景色     */
+    color         : #498176;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 0.9;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+}
+.header_login:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 1;           /* カーソル時透明度 */
+
+}
+/*新規登録ボタン*/
+.header_new_user{
+    margin-top: 0px;
+    height: 27px;
+    font-family: serif;
+    font-weight: bold;
+    display       : inline-block;
+    border-radius : 10%;          /* 角丸       */
+    font-size     : 14pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 6px 19px;   /* 余白       */
+    background    : #ffffff;     /* 背景色     */
+    color         : #498176;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 0.9;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+}
+.header_new_user:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 1;           /* カーソル時透明度 */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*マイページ、ログアウト*/
@@ -96,7 +157,7 @@ body{
     
 }
 /*@nicknameがログイン中*/
-.user_nab_header_user{
+.user_nabheader_user{
     padding-bottom: 2px;
     padding-left: 8px;
     
@@ -135,8 +196,12 @@ body{
 }
 .article_one{
     margin-right: 120px;
-    padding-top: 12px;
-    border-top: dotted 3px #33CC99;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    border-bottom: dotted 3px #33CC99;
+    
 }
 /*投稿のタイトル*/
 .article_title{
@@ -151,20 +216,22 @@ body{
 /*投稿の日付*/
 .article_created{
     color: #33CC99;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 
 
 /*削除、編集機能*/
 .destroy_edit{
-    
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     text-decoration: none;
-    word-break: keep-all;
+    
 }
 /*詳細ボタン*/
 .index_details_btn{
     margin-top: 5px;
+    margin-bottom: 0px;
     font-weight: bold;
     float: left;
     font-family: serif;
@@ -189,6 +256,7 @@ body{
 /*削除ボタン*/
 .index_destroy_btn{
     margin-top: 5px;
+    margin-bottom: 0px;
     font-weight: bold;
     margin-left: 3px;
     float: left;
@@ -214,8 +282,9 @@ body{
 /*編集ボタン*/
 .index_edit_btn{
     margin-top: 5px;
+    margin-right: 0px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-left: 3px;
     font-family: serif;
     display       : inline-block;
@@ -514,7 +583,7 @@ body{
     background-color: #fffafa;
     color: #ff69b4;
     margin-top: 27px;
-    margin-right: 365px;
+    margin-right: 225px;
     padding-left: 3px;
     padding-bottom: 3px;
     margin-bottom: 0px;
