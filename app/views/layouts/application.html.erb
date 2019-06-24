@@ -54,8 +54,8 @@
       <% else %>
       
         <div class="grid-6 header_before_user">
-          <%= button_to "ログイン", new_user_session_path, class: 'post', :class => "header_login" %>
-          <%= button_to "新規登録", new_user_registration_path, class: 'post', :class => "header_new_user" %>
+          <%= link_to "ログイン", user_session_path, class: 'post', :class => "header_login" %>
+          <%= link_to "新規登録", user_registration_path, :class => "header_new_user" %>
         </div>
       <% end %>
     </div>
