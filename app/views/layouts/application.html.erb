@@ -31,7 +31,7 @@
     
     <header class="header">
     <div class="header__bar row">
-      <h1 class="grid-6_header_top"><a class="header_title", href="/" style="text-decoration: none;">ブログ</a></h1>
+      <h1 class="grid-6_header_top"><a class="header_title", href="/">ブログ</a></h1>
       
       　
       
@@ -39,17 +39,17 @@
         <div class="user_nav grid-6 header_menu">
             <ul class="user__info">
               <li>
-                <a href="/users/<%= current_user.id %>" style="text-decoration: none;">マイページ</a>
-                <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+                <a class="header_mypage" href="/users/<%= current_user.id %>">マイページ</a>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, :class => "header_logout" %>
               </li>
             </ul>
             <div class="header_create">
-              <a class="post" href="/blogs/new" style="text-decoration: none;">投稿しよう！</a>
+              <a class="header_create_btn" href="/blogs/new">投稿しよう！</a>
             </div>
         </div>
         
         <div class="user_nabheader_user">
-          <span><%= current_user.nickname %>がログイン中</spam>
+          <span class="str"><%= current_user.nickname %>がログイン中</spam>
         </div>
       <% else %>
       
