@@ -202,15 +202,33 @@ body{
 
 
 
-/*投稿しよう*/
+/*投稿しよう!*/
 .header_create{
+    font-weight: bold;
     height: 22px;
     padding-bottom: 7px;
     padding-left: 7px;
     margin-left: 710px;
-    margin-right: 583px;
-
-    
+    /*margin-right: 583px;*/
+}
+.header_create_btn{
+    display       : inline-block;
+    border-radius : 9%;          /* 角丸       */
+    font-size     : 16px;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 6px 12px;   /* 余白       */
+    background    : #ffffff;     /* 背景色     */
+    color         : #00b3b3;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #ffffff;    /* 枠の指定 */
+}
+.header_create_btn:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #ffffff;     /* 背景色     */
+    background    : #00b3b3;     /* 文字色     */
 }
 /*@nicknameがログイン中*/
 .user_nabheader_user{
@@ -234,7 +252,8 @@ body{
   bottom      : 0;
   left        : 0;
   right       : 0;
-  height      : 30px;
+  height      : 26px;
+  font-size: 19px;
   background-image: url("https://www.pakutaso.com/shared/img/thumb/PAK88_midorihikari15191438_TP_V.jpg");
   z-index     : 10;
   text-align  : center;
