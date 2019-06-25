@@ -11,9 +11,10 @@ Rails.application.routes.draw do
   # get 'blogs/:id/edit' => 'blogs#edit' #編集画面
   # get 'blogs/:id' => 'blogs#show' #投稿詳細画面
   
-  resources :users, only: %i[show create]
-  # get 'users/:id' => 'users#show' #userのidをparamasから取り出す
+  # resources :users, only: [:show]
+  get 'users/:id' => 'users#show' #userのidをparamasから取り出す
   
+  get 'users/sgin_up' => 'devise/registrations#new'
   
 
 end
