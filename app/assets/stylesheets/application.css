@@ -55,15 +55,17 @@ body{
     height: 60px;
     font-size: 40px;
     color: #008080;
-    padding-top: 14px;
-    padding-left: 545px;
+    /*padding-top: 14px;*/
+    /*padding-left: 545px;*/
     margin-bottom: 0px;
     margin-top: 0px;
+    text-align  : center;
 }
 
 .grid-6_header_top{
     margin-top: 0px;
     margin-bottom: 0px;
+    text-align  : center;
 }
 
 
@@ -228,13 +230,20 @@ body{
 
 /*フッター*/
 .footer_{
-    padding-left: 480px;
-    font-weight: 800;
-    color: #33CC99;
-    background-image: url("https://www.pakutaso.com/shared/img/thumb/PAK88_midorihikari15191438_TP_V.jpg");
-    height: 30px;
-    
+  position    : fixed;
+  bottom      : 0;
+  left        : 0;
+  right       : 0;
+  height      : 30px;
+  background-image: url("https://www.pakutaso.com/shared/img/thumb/PAK88_midorihikari15191438_TP_V.jpg");
+  z-index     : 10;
+  text-align  : center;
+  font-weight : bold;
+  color: #33CC99;
 }
+
+    
+
 
 
 
@@ -371,28 +380,20 @@ body{
 
 
 /*new.html.erb*/
-/*間違えた！ホームに戻ろう！*/
-.contents_new_home{
-    margin-left: 110px;
-    text-decoration: none;
-}
 /*投稿する*/
 .contents_new_word{
+    text-align  : center;
     color: #FF6699;
     font-size: 25px;
-    margin-left: 556px;
     font-weight: bold;
+    margin-top: 20px;
 }
-/*.input.create_item{*/
-/*    width:10px;*/
-/*    height:30px;*/
-/*    border-radius: 110px;*/
-/*    font-size: 10px;*/
-/*    margin-left: 500px;*/
-    
-/*}*/
+.create_item{
+    text-align: center;
+}
 .new_articles_title{
-    margin-left: 450px;
+    text-align  : center;
+   
     height: 24px;
     width: 400px;
     font-size: 18px;
@@ -400,13 +401,13 @@ body{
     padding-bottom: 0px;
 }
 .new_articles_img{
-    margin-left: 450px;
+    text-align  : center;
     height: 24px;
     width: 400px;
     font-size: 18px;
 }
 .new_articles_text{
-    margin-left: 450px;
+    text-align  : center;
     margin-bottom: 20px;
     height: 100px;
     width: 330px;
@@ -414,8 +415,7 @@ body{
 }
 /*今日もがんばってるね！投稿！*/
 .new_articles_btn{
-    margin-left: 477px;
-    margin-bottom: 60px;
+    text-align  : center;
     display       : inline-block;
     border-radius : 30%;          /* 角丸       */
     font-size     : 13pt;        /* 文字サイズ */
@@ -466,36 +466,37 @@ body{
 
 
 /*edit.html.erb*/
+.contents_edit{
+    text-align: center;
+}
 /*編集しよう！*/
 .edit_word{
+    text-align: center;
     color: #99CC66;
-    margin-left: 537px;
-    padding-top: 18px;
     font-size: 25px;
     font-weight: bold;
+    margin-top: 20px;
 }
 .edit_title{
+    text-align: center;
     height: 24px;
     width: 400px;
     font-size: 18px;
-    margin-left: 450px;
 }
 .edit_imag{
+    text-align: center;
     height: 24px;
     width: 400px;
     font-size: 18px;
-    margin-left: 450px;
 }
 .edit_text{
+    text-align: center;
     height: 100px;
     width: 330px;
     font-size: 18px;
-    margin-left: 450px;
 }
 .edit_btn{
-    margin-left: 540px;
-    padding-top: 0px;
-    margin-bottom: 80px;
+    text-align: center;
      display       : inline-block;
      border-radius : 20%;          /* 角丸       */
      font-size     : 14pt;        /* 文字サイズ */
@@ -524,16 +525,15 @@ body{
 /*update.html.erb*/
 /*再投稿したよ！おつかれさま！*/
 .success_edit{
+    text-align: center;
     margin-top: 40px;
-    margin-left: 460px;
     color: #99CC00;
     font-size: 27px;
 }
 /*投稿一覧に戻ろう*/
 .edit_home{
-    margin-left: 530px;
+    text-align: center;
     margin-top: 20px;
-    margin-bottom: 280px;
     text-decoration: none;
 }
 
@@ -552,15 +552,14 @@ body{
 }
 /*削除したよ！*/
 .success_destroy{
-    margin-top: 35px;
-    margin-left: 527px;
+    text-align: center;
     margin-bottom: 20px;
     color: #999966;
     font-size: 29px;
 }
 /*投稿一覧へ戻ろう！*/
 .destroy_home{
-    margin-left: 522px;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -573,27 +572,28 @@ body{
 /*views/devise/registration/new.html.erb/新規登録画面*/
 /*新規登録*/
 .user_new_title{
+    text-align  : center;
     background: #da70d6;
     font-size: 28px;
     color: #fff0f5;
     font-family: serif;
     height: 43px;
     margin-bottom: 11px;
-    margin-right: 576px;
-    margin-left: 365px;
+    margin-right: 500px;
+    margin-left: 500px;
     margin-top: 10px;
     
-    padding-left: 175px;
+    
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .user_new{
-    margin-left: 219px;
-    margin-right: 421px;
-    padding-left: 310px;
-    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 340px;
+    margin-right: 340px;
+    margin-bottom: 240px;
     padding-top: 10px;
     height: 410px;
     font-size: 23px;
@@ -603,12 +603,13 @@ body{
 }
 /*ニックネーム(7文字まで)*/
 .user_new_nickname{
+    text-align: center;
     height: 17px;
     background-color: #fffafa;
     color: #ff69b4;
-    margin-right: 205px;
+    margin-right: 230px;
+    margin-left: 230px;
     margin-bottom: 0px;
-    padding-left: 6px;
     padding-bottom: 15px;
     border-bottom: solid 3px #da70d6;
     border-top-left-radius: 10px;
@@ -618,12 +619,14 @@ body{
 }
 /*メールアドレス*/
 .user_new_maill{
+    text-align  : center;
     height: 30px;
     background-color: #fffafa;
     color: #ff69b4;
     margin-top: 25px;
-    margin-right: 315px;
-    padding-left: 6px;
+    margin-right: 230px;
+    margin-left: 230px;
+    
     
     border-bottom: solid 3px #da70d6;
     border-top-left-radius: 10px;
@@ -631,15 +634,16 @@ body{
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-/*パスワード*/
+/*パスワード(6文字以上)*/
 .user_new_password{
+    text-align  : center;
     height: 27px;
     background-color: #fffafa;
     color: #ff69b4;
+    padding-bottom: 5px;
     margin-top: 27px;
-    margin-right: 225px;
-    padding-left: 3px;
-    padding-bottom: 3px;
+    margin-right: 230px;
+    margin-left: 230px;
     margin-bottom: 0px;
     border-bottom: solid 3px #da70d6;
     border-top-left-radius: 10px;
@@ -649,12 +653,13 @@ body{
 }
 /*パスワードの確認*/
 .user_new_password_confirmation{
+    text-align  : center;
     height: 30px;
-    margin-top: 60px;
     background-color: #fffafa;
     color: #ff69b4;
-    margin-right: 290px;
-    padding-left: 6px;
+    margin-top: 60px;
+    margin-right: 230px;
+    margin-left: 230px;
     border-bottom: solid 3px #da70d6;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -663,6 +668,7 @@ body{
 }
 /*登録するボタン*/
 .user_new_button{
+    text-align  : center;
     font-family: serif;
     font-weight: bold;
     margin-top: 16px;
@@ -699,6 +705,7 @@ body{
 /*views/devise/sessions/new.html.erb/ログイン画面*/
 /*ログイン*/
 .user_login_title{
+    text-align  : center;
     background: #f0f46b;
     font-size: 28px;
     color: #57591d;
@@ -706,22 +713,22 @@ body{
     
     margin-top: 10px;
     margin-bottom: 14px;
-    margin-left: 370px;
-    margin-right: 570px;
-    padding-left: 175px;
+    margin-left: 500px;
+    margin-right: 500px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .user_login{
+    font-weight: 490;
+    text-align: center;
     height: 290px;
-    margin-left: 130px;
-    margin-right: 308px;
-    margin-bottom: 70px;
-    padding-left: 380px;
-    padding-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 19px;
     font-size: 24px;
+    color: #800000;
     background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/16/67/645825862063634.jpg")
 }
 
@@ -737,7 +744,7 @@ body{
     cursor        : pointer;     /* カーソル  */  
     padding       : 8px 29px;   /* 余白       */ 
     background    : #ffffff;     /* 背景色   */   
-    color         : #7f4600;     /* 文字色  */    
+    color         : #800000;     /* 文字色  */    
     line-height   : 10px;         /* 1行の高さ  */ 
     opacity       : 1;           /* 透明度 */     
     transition    : .3s;         /* なめらか変化 */ 
@@ -754,21 +761,21 @@ body{
 
 /*ログイン画面・新規登録画面・投稿画面・編集画面の記入欄*/
 input[type="text"] {
-    width: 330px;
+    width: 300px;
     height: 24px;
     font-size: 20px;
     font-family: serif;
     }
     
 input[type="password"] {
-    width: 330px;
+    width: 300px;
     height: 25px;
     font-size: 20px;
     font-family: serif;
     }
 
 input[type="email"] {
-    width: 330px;
+    width: 300px;
     height: 25px;
     font-size: 20px;
     font-family: serif;
