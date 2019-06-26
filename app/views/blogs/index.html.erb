@@ -3,7 +3,7 @@
   <li>
     <div class="article_one">
   
-      <print>投稿者 <%= article.user.nickname %></print>
+      <print>投稿者 &thinsp;<%= article.user.nickname %></print>
       <print class="article_title">【<%= article.title %>】</print>
       <p class="article_text"><%= article.text %></p>
     
@@ -15,10 +15,10 @@
     
       
       <div class="destroy_edit">
-        <%= button_to '◇詳細見たい！', "/blogs/#{article.id}", method: :get, :class => "index_details_btn" %>
+        <%= link_to '◇詳細見たい！', "/blogs/#{article.id}", method: :get, :class => "index_details_btn" %>
         <% if user_signed_in? && current_user.id == article.user_id %>
-          <%= button_to '◇削除したい！', "/blogs/#{article.id}", method: :delete, data: { confirm: '本当に削除しますか？' }, :class => "index_destroy_btn" %>
-          <%= button_to '◇編集したい！', "/blogs/#{article.id}/edit", method: :get, :class => "index_edit_btn"  %>
+          <%= link_to '◇削除したい！', "/blogs/#{article.id}", method: :delete, data: { confirm: '本当に削除しますか？' }, :class => "index_destroy_btn" %>
+          <%= link_to '◇編集したい！', "/blogs/#{article.id}/edit", method: :get, :class => "index_edit_btn" %>
         <% end %> 
       </div>
   　

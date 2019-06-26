@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   # resources :users, only: [:show]
   get 'users/:id' => 'users#show' #userのidをparamasから取り出す
   
-  get 'users/sgin_up' => 'devise/registrations#new'
+  get 'users/sgin_up' => 'devise/registrations#new' #新規登録画面
   
 
 end

@@ -3,7 +3,7 @@
   <% @articles.each do |article| %>
   <li>
     <div class="article_user_one">
-      <print>投稿者<%= article.user.nickname %></print>
+      <print>投稿者 &thinsp;<%= article.user.nickname %></print>
       <print class="article_title">【<%= article.title %>】</print>
       <p class="article_text"><%= article.text %></p>
     

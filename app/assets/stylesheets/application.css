@@ -191,17 +191,6 @@ body{
     opacity       : 0.8;         /* カーソル時透明度 */
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*投稿しよう!*/
 .header_create{
     font-weight: bold;
@@ -209,7 +198,6 @@ body{
     padding-bottom: 7px;
     padding-left: 7px;
     margin-left: 710px;
-    /*margin-right: 583px;*/
 }
 .header_create_btn{
     display       : inline-block;
@@ -242,7 +230,7 @@ body{
 
 /*@nicknameの今までの投稿*/
 .header_user{
-    padding-left: 120px;
+    padding-left: 160px;
     color: #008080;
 }
 
