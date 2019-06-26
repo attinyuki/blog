@@ -2,18 +2,13 @@
   <% @articles.each do |article| %>
   <li>
     <div class="article_one">
-  
       <print>投稿者 &thinsp;<%= article.user.nickname %></print>
       <print class="article_title">【<%= article.title %>】</print>
       <p class="article_text"><%= article.text %></p>
-    
       <% if article.image != "" %>
         <p><img src="<%= article.image %>"></p>
       <% end %>
-  
       <p class="article_created"><%= article.created_at %></p>
-    
-      
       <div class="destroy_edit">
         <%= link_to '◇詳細見たい！', "/blogs/#{article.id}", method: :get, :class => "index_details_btn" %>
         <% if user_signed_in? && current_user.id == article.user_id %>
@@ -21,12 +16,8 @@
           <%= link_to '◇編集したい！', "/blogs/#{article.id}/edit", method: :get, :class => "index_edit_btn" %>
         <% end %> 
       </div>
-  　
-  　
-  
     </div>
   </li>
-  
   <% end %>
   <%= paginate(@articles) %>
 </ul>

@@ -6,14 +6,10 @@
       <print>投稿者 &thinsp;<%= article.user.nickname %></print>
       <print class="article_title">【<%= article.title %>】</print>
       <p class="article_text"><%= article.text %></p>
-    
       <% if article.image != "" %>
         <p><img src="<%= article.image %>"></p>
       <% end %>
-  
       <p class="article_created"><%= article.created_at %></p>
-    
-  
     </div>
   </li>
   <% end %>
