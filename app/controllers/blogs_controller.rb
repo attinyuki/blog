@@ -35,9 +35,6 @@ class BlogsController < ApplicationController
     @article = Article.find(params[:id])
   end
 
-
-
-
   private
   def blog_params
     params.permit(:title, :image, :text)
